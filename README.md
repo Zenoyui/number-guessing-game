@@ -1,74 +1,74 @@
 # Number Guessing Game
 
-**Number Guessing Game** — это увлекательная консольная игра на JavaScript, в которой вам предстоит угадать загаданное число. Игра поддерживает несколько языков и предлагает различные режимы игры.
+**Number Guessing Game** is an engaging console-based JavaScript game where you have to guess a randomly generated number. The game supports multiple languages and offers various game modes.
 
-## Начало работы
+## Getting Started
 
-### Требования
+### Requirements
 
-- [Node.js](https://nodejs.org/) установлен на вашем компьютере.
+- [Node.js](https://nodejs.org/) installed on your computer.
 
-### Установка
+### Installation
 
-1. Клонируйте репозиторий:
+1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/ваш-юзернейм/number-guessing-game.git
+    git clone https://github.com/your-username/number-guessing-game.git
     ```
 
-2. Перейдите в директорию проекта:
+2. **Navigate to the project directory:**
 
     ```bash
     cd number-guessing-game
     ```
 
-3. Установите необходимые зависимости:
+3. **Install the necessary dependencies:**
 
     ```bash
     npm install prompt-sync
     ```
 
-## Использование
+## Usage
 
-Перед запуском игры необходимо установить зависимости с помощью команды `npm install prompt-sync`. После этого вы можете запускать игру различными способами.
+Before running the game, ensure that you have installed the dependencies using the command `npm install prompt-sync`. After that, you can launch the game using various commands.
 
-### Команды запуска
+### Launch Commands
 
 - **`node index.js`**
 
-    Запускает игру с загаданным случайным числом от 1 до 100.
+    Starts the game with a randomly selected number between 1 and 100.
 
-- **`node index.js -n [максимальное число]`**
+- **`node index.js -n [max number]`**
 
-    Запускает игру с загаданным случайным числом от 1 до указанного `[максимальное число]`.
+    Starts the game with a randomly selected number between 1 and the specified `[max number]`.
 
-    **Пример:**
+    **Example:**
 
     ```bash
     node index.js -n 200
     ```
 
-- **`node index.js num [число] [максимальное число]`**
+- **`node index.js num [number] [max number]`**
 
-    Режим, в котором компьютер пытается угадать указанное `[число]` в диапазоне от 1 до `[максимальное число]`.
+    A mode where the computer tries to guess the specified `[number]` within the range of 1 to `[max number]`.
 
-    **Пример:**
+    **Example:**
 
     ```bash
     node index.js num 75 150
     ```
 
-## Особенности
+## Features
 
-- **Многоязычная поддержка:** Игра доступна на нескольких языках, включая английский, русский, украинский, испанский и французский. Чтобы сменить язык во время игры, введите `lang` и выберите нужный язык из списка.
+- **Multilingual Support:** The game is available in several languages, including English, Russian, Ukrainian, Spanish, and French. To change the language during the game, type `lang` and select the desired language from the list.
 
-- **Выход из игры:** В любой момент игры вы можете выйти, введя `exit`.
+- **Exit the Game:** At any point during the game, you can exit by typing `exit`.
 
-## Пример игры
+## Example Gameplay
 
 ```bash
 $ node index.js
-Угадайте число от 1 до 100: 50
-Слишком низкое число! Попробуйте снова.
-Угадайте число от 1 до 100: 75
-Поздравляем! Вы угадали число 75 за 2 попытки.
+Guess a number between 1 and 100: 50
+Too low! Try again.
+Guess a number between 1 and 100: 75
+Congratulations! You guessed the number 75 in 2 attempts.
