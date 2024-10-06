@@ -55,7 +55,7 @@ Before running the game, ensure that you have installed the dependencies using t
     **Example:**
 
     ```bash
-    node index.js num 75 150
+    node index.js num 75 -n 150
     ```
 
 ## Features
